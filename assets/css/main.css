@@ -3,7 +3,7 @@
    Inspired by the typographic & editorial craft of borretti.me
    ========================================================================== */
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=JetBrains+Mono:wght@300;400;500;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 :root {
   /* Color Palette - Light Mode (Warm Archival Paper & Ink) */
@@ -54,8 +54,9 @@
   --font-4: 34px;
   --font-5: 44px;
 
-  --font-serif: "Newsreader", "EB Garamond", "TeX Gyre Termes", "Times New Roman", Times, serif;
-  --font-mono: "JetBrains Mono", "Fira Code", "Courier New", Courier, monospace;
+  --font-main: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "Space Mono", "JetBrains Mono", "Courier New", Courier, monospace;
+  --font-serif: var(--font-main);
 
   --medialist-initial: 52px;
   --medialist-final: 68px;
@@ -115,7 +116,7 @@ html {
 }
 
 body {
-  font-family: var(--font-serif);
+  font-family: var(--font-main);
   font-weight: 400;
   color: var(--text-color);
   background-color: var(--bg-color);
@@ -262,15 +263,16 @@ nav.top-nav ul.breadcrumbs .sep {
 .home-page .box h1 {
   font-size: var(--font-4);
   line-height: 1.15;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   margin-bottom: 6px;
-  font-family: var(--font-serif);
+  font-family: var(--font-main);
 }
 
 .home-page .box .tagline {
-  font-family: var(--font-serif);
-  font-style: italic;
+  font-family: var(--font-main);
+  font-weight: 400;
+  letter-spacing: 0.01em;
   color: var(--text-muted);
   font-size: var(--font-m);
   margin-bottom: var(--size-3);
@@ -372,28 +374,28 @@ nav.media-nav ul li a:hover .frame svg {
 }
 
 .scramble-label {
-  font-family: var(--font-mono);
+  font-family: var(--font-main);
   font-size: var(--font-2);
   line-height: 1.25;
-  font-weight: 500;
-  letter-spacing: 0.04em;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   color: var(--text-color);
-  transition: color 0.2s ease, text-shadow 0.2s ease;
+  transition: color 0.2s ease;
   user-select: none;
 }
 
-/* Subtle glowing pulse when locked */
-.scramble-label.is-locked {
+/* Highlight label cleanly on link hover */
+nav.media-nav ul li a:hover .scramble-label {
   color: var(--link-color);
-  font-weight: 700;
 }
 
 .scramble-sublabel {
-  font-family: var(--font-serif);
-  font-style: italic;
+  font-family: var(--font-main);
+  font-weight: 400;
   font-size: var(--font-s);
   color: var(--text-muted);
   margin-top: 2px;
+  line-height: 1.35;
 }
 
 .home-footer-info {
@@ -457,9 +459,10 @@ article header.paper-header {
 article header.paper-header h1 {
   font-size: var(--font-4);
   line-height: 1.2;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.01em;
   margin-bottom: 8px;
-  font-family: var(--font-serif);
+  font-family: var(--font-main);
 }
 
 article header.paper-header .paper-meta {
@@ -567,7 +570,7 @@ table.metadata-table .key {
 }
 
 table.metadata-table .value {
-  font-family: var(--font-serif);
+  font-family: var(--font-main);
   color: var(--text-color);
 }
 

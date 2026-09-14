@@ -33,7 +33,7 @@
 
     // Visuals
     fontSize: 13,
-    fontFamily: '"JetBrains Mono", "Fira Code", "Courier New", monospace'
+    fontFamily: '"Space Mono", "JetBrains Mono", "Courier New", monospace'
   };
 
   // ASCII Fish Models with oscillating tail frames

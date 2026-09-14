@@ -6,8 +6,8 @@ Personal academic and research website for **Dominicus Johan Nararya**
 
 ## Key Features
 
-1. **Borretti-Inspired Classical Editorial Typography & Aesthetics**:
-   - High-grade serif typography stack (Newsreader, EB Garamond, TeX Gyre Termes).
+1. **Editorial & Tactical Aesthetics**:
+   - Cohesive typographic stack combining Formal, Tech, Art, and Military design sensibilities (Space Grotesk & Space Mono).
    - Framed woodcut/engraving icons with smooth cubic-bezier hover expansion.
    - Dual theme support: Warm Archival Parchment & Ink (Light) ↔ Deep Carbon & Luminous Crimson (Dark).
    - Academic article formatting with LaTeX math equations, code blocks, metadata key-value tables, and clickable jump footnotes (`[1]`).
@@ -19,8 +19,9 @@ Personal academic and research website for **Dominicus Johan Nararya**
    - Click ripples generate radial fluid displacement waves.
    - Dedicated **[Simulation Lab](/simulations/)** and collapsible HUD for real-time parameter tuning.
 
-3. **Endlessly Scrambling Alphanumeric Navigation**:
-   - Navigation items on the home page continuously cycle random alphanumeric characters per position (e.g. `1wSu)_op`, `9#zK!m~Q`), resolving and locking cleanly into their readable labels (`About Me`, `Portfolio & Work`, etc.) when hovered.
+3. **Cohesive Typographic Architecture**:
+   - Built with **Space Grotesk** and **Space Mono**, synthesizing Formal, Tech, Art, and Military aesthetics into a singular, unified design identity across all headings, body copy, navigation, data tables, and telemetry readouts.
+   - Clean, static navigation labels with smooth interactive hover feedback.
 
 4. **Zero-Bloat GitHub Pages Architecture**:
    - 100% semantic HTML5, Vanilla CSS3, and ES6+ JavaScript.
@@ -32,7 +33,7 @@ Personal academic and research website for **Dominicus Johan Nararya**
 
 ```
 /drnoodle5.github.io/
-├── index.html                 # Home landing page with Borretti box & scrambling nav
+├── index.html                 # Home landing page with Borretti box & static media nav
 ├── about/
 │   └── index.html             # Biography, research interests & education
 ├── projects/
